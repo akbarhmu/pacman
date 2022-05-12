@@ -9969,9 +9969,9 @@ var preNewGameState = (function() {
             newGameState.setStartLevel(1);
             exitTo(newGameState, 60);
         });
-    menu.addTextButton("PRACTICE",
+    menu.addTextButton("MISSION",
         function() { 
-            practiceMode = true;
+            practiceMode = false;
             turboMode = false;
             exitTo(selectActState);
         });
@@ -10020,7 +10020,7 @@ var selectActState = (function() {
     // TODO: create ingame menu option to return to this menu (with last act played present)
 
     var menu;
-    var numActs = 4;
+    var numActs = 1;
     var defaultStartAct = 1;
     var startAct = defaultStartAct;
 
@@ -12755,10 +12755,10 @@ var getActColor = function(act) {
 
 var getActRange = function(act) {
     if (act == 1) {
-        return [1,2];
+        return [1,3];
     }
     else if (act == 2) {
-        return [3,5];
+        return [4,5];
     }
     else {
         var start = act*4-6;
