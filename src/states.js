@@ -667,7 +667,7 @@ var selectLevelState = (function() {
         menu.addSpacer(2);
         if (range[0] < range[1]) {
             for (i=range[0]; i<=range[1]; i++) {
-                var levelDifficultyTitle;
+                var levelDifficultyTitle = "God";
                 if(i==1){
                     var levelDifficultyTitle = "Easy";
                 } else if(i==2) {
