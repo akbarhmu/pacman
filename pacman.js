@@ -12754,16 +12754,7 @@ var getActColor = function(act) {
 };
 
 var getActRange = function(act) {
-    if (act == 1) {
-        return [1,3];
-    }
-    else if (act == 2) {
-        return [4,5];
-    }
-    else {
-        var start = act*4-6;
-        return [start, start+3];
-    }
+    return [1,3];
 };
 
 var getCookieActColor = function(act) {
