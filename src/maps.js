@@ -199,10 +199,10 @@ var getActColor = function(act) {
 
 var getActRange = function(act) {
     if (act == 1) {
-        return [1,2];
+        return [1,3];
     }
     else if (act == 2) {
-        return [3,5];
+        return [4,5];
     }
     else {
         var start = act*4-6;
