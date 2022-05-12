@@ -10159,7 +10159,15 @@ var selectLevelState = (function() {
         menu.addSpacer(2);
         if (range[0] < range[1]) {
             for (i=range[0]; i<=range[1]; i++) {
-                menu.addTextIconButton("LEVEL "+i,
+                var levelDifficultyTitle;
+                if(i==1){
+                    var levelDifficultyTitle = "Easy";
+                } else if(i==2) {
+                    var levelDifficultyTitle = "Medium";
+                } else if(i==3) {
+                    var levelDifficultyTitle = "Hard";
+                }
+                menu.addTextIconButton(levelDifficultyTitle,
                     (function(j){
                         return function() { 
                             playLevel(j);
