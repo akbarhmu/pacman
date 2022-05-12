@@ -518,7 +518,7 @@ var selectActState = (function() {
     // TODO: create ingame menu option to return to this menu (with last act played present)
 
     var menu;
-    var numActs = 4;
+    var numActs = 1;
     var defaultStartAct = 1;
     var startAct = defaultStartAct;
 
