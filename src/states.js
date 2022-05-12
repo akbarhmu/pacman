@@ -469,7 +469,7 @@ var preNewGameState = (function() {
         });
     menu.addTextButton("MISSION",
         function() { 
-            practiceMode = true;
+            practiceMode = false;
             turboMode = false;
             exitTo(selectActState);
         });
