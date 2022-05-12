@@ -467,7 +467,7 @@ var preNewGameState = (function() {
             newGameState.setStartLevel(1);
             exitTo(newGameState, 60);
         });
-    menu.addTextButton("PRACTICE",
+    menu.addTextButton("MISSION",
         function() { 
             practiceMode = true;
             turboMode = false;
